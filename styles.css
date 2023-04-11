@@ -1,0 +1,45 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 30px;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 225px auto;
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.features-list>div {
+    background-color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 400px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
